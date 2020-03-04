@@ -32,11 +32,12 @@ public class ThreadPoolExDemo {
 
         TaskRunnable task = new TaskRunnable();
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             threadPoolExecutor.execute(task);
-            System.out.println("当前有效的线程数:"+threadPoolExecutor.getActiveCount()+"    当前WorkQueue的Task个数："+threadPoolExecutor.getQueue().size());
-
-
+            System.out.println("当前有效的线程数:"+threadPoolExecutor.getActiveCount()+
+                    "    当前WorkQueue的Task个数："+threadPoolExecutor.getQueue().size());
         }
+        threadPoolExecutor.shutdown();
+        System.out.println(threadPoolExecutor.getActiveCount());
     }
 }

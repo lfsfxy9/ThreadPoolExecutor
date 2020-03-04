@@ -26,7 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ThreadPoolExDemo" target="1.8" />
+      <module name="ThreadPoolExDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

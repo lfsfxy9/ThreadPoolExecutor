@@ -10,6 +10,7 @@ public class ThreadFactoryImp implements ThreadFactory {
     @Override
     public Thread newThread(Runnable r) {
         Thread thread = new Thread(r,"ThreadFactoryImp.newThread");
+        System.out.println("create a new Thread:ThreadFactoryImpl.newThread");
         return thread;
     }
 }

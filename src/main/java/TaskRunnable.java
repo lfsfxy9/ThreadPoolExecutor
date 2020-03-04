@@ -7,11 +7,11 @@
 public class TaskRunnable implements  Runnable {
     @Override
     public void run() {
-        try {
-            Thread.sleep(1000); //毫秒
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000); //毫秒
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         System.out.println("当前Task被执行");
     }
 
